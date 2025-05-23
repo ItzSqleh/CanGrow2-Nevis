@@ -93,4 +93,4 @@ Whether You're Seeking A Better Job Fit Or Want To Understand Yourself Deeper, N
 > 🎥 **Watch The Demo Video**: [Nevis Intro & Demo](Assets/Nevis-IntroVideo.mp4)  
 1. Clone The Repository:
 ```bash
-git clone https://github.com/ItzSqleh/CanGrow2-Raw-Nevis.git
+git clone https://github.com/ItzSqleh/CanGrow2-Nevis.git
