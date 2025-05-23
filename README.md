@@ -1,4 +1,4 @@
-# CanGrow2-Nevis# 🚀 Nevis – Smart Career Path Navigator & Self-Growth Assistant
+# CanGrow2-Nevis 🚀 Nevis – Smart Career Path Navigator & Self-Growth Assistant
 
 <p align="center">
   <img src="https://img.shields.io/badge/Made%20With-Python-blue?logo=python" alt="Python">
