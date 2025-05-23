@@ -22,4 +22,4 @@
 ## 💡 Temporary Access
 For Early Access Contributors:
 ```bash
-git clone https://github.com/YourOrg/CanGrow2-Raw-Nevis.git
+git clone https://github.com/YourOrg/CanGrow2-Raw-Nevis.git](https://github.com/ItzSqleh/CanGrow2-Nevis.git
