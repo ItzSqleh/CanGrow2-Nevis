@@ -69,11 +69,13 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run Src/App/StreamlitApp.py
+```
 
 ### Docker Deployment
 ```bash
 docker-compose up --build
 # Access at http://localhost:8501
+```
 
 ## 📊 Expected Outputs
 
