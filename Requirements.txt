@@ -1,0 +1,99 @@
+Data Manipulation Libraries
+Pandas
+Version: 2.2.3
+Purpose: Data Manipulation
+
+Numpy
+Version: 2.1.1
+Purpose: Numerical Operations
+
+Scikit-Learn
+Version: 1.5.2
+Purpose: Machine Learning
+
+Joblib
+Version: 1.4.2
+Purpose: Model Serialization
+
+Natural Language Processing Libraries
+NLTK
+Version: 3.9.1
+Purpose: Text Processing
+
+WordCloud
+Version: 1.9.3
+Purpose: Visualization
+
+Visualization Libraries
+Matplotlib
+Version: 3.9.2
+Purpose: Plotting
+
+Seaborn
+Version: 0.13.2
+Purpose: Enhanced Visualizations
+
+Plotly
+Version: 5.23.0
+Purpose: Interactive Charts
+
+File Processing Libraries
+PyMuPDF
+Version: 1.24.10
+Purpose: PDF Processing
+
+Pytesseract
+Version: 0.3.13
+Purpose: OCR
+
+Pillow
+Version: 10.4.0
+Purpose: Image Processing
+
+Progress Bar Library
+Tqdm
+Version: 4.66.5
+Purpose: Progress Bars
+
+Machine Learning Model Enhancement (Optional)
+Transformers
+Version: 4.45.1
+Purpose: MBTI Detection and Text Processing
+
+Web Application Framework
+Streamlit
+Version: 1.39.0
+Purpose: UI Development
+
+Requests
+Version: 2.32.3
+Purpose: HTTP Requests
+
+Python-Docx
+Version: 1.1.2
+Purpose: DOCX Processing
+
+FuzzyWuzzy
+Version: 0.18.0
+Purpose: Fuzzy String Matching
+
+Install All Required Project Libraries
+Pip Install \
+  Pandas==2.2.3 \
+  Numpy==2.1.1 \
+  Scikit-Learn==1.5.2 \
+  Joblib==1.4.2 \
+  Nltk==3.9.1 \
+  Wordcloud==1.9.3 \
+  Matplotlib==3.9.2 \
+  Seaborn==0.13.2 \
+  Plotly==5.23.0 \
+  PyMuPDF==1.24.10 \
+  Pytesseract==0.3.13 \
+  Pillow==10.4.0 \
+  Tqdm==4.66.5 \
+  Transformers==4.45.1 \
+  Streamlit==1.39.0 \
+  Requests==2.32.3 \
+  Python-Docx==1.1.2 \
+  FuzzyWuzzy==0.18.0
