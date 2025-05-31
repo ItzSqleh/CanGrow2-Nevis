@@ -1,0 +1,5 @@
+{
+  "SklearnVersion": "1.6.1",
+  "ModelType": "LogisticRegression",
+  "VectorizerType": "TfidfVectorizer"
+}
