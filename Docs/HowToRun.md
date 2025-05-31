@@ -1,4 +1,4 @@
-# 📌 CanGrow 2 -Nevis – AI Career Engine Tutorial
+# 📌 CanGrow 2 -Nevis – AI Career Engine How To Run
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
