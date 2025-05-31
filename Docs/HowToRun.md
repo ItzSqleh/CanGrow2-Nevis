@@ -42,10 +42,7 @@ CanGrow2-Final/
 │   ├── StreamlitApp.py
 │   ├── Model.py
 │   ├──Assets/
-│   │   └── Models/
-│   │       ├── Model.pkl
-│   │       ├── Vectorizer.pkl
-│   │       └── Metadata.json
+│   │       └── JobClassifier.pkl
 │   └── Statics/
 │       ├── Nevis-Introduction.mp4
 │       ├── Nevis-IntroVideo.mp4
