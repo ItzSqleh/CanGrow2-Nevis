@@ -16,3 +16,4 @@ Streamlit==1.39.0
 Requests==2.32.3
 Python-Docx==1.1.2
 Fuzzywuzzy==0.18.0
+Python-Levenshtein
