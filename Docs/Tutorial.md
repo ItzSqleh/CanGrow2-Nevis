@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="../App/Statics/Nevis-Logo-White-Bg.jpg" alt="Nevis Dev Logo" width="250">
+  <img src="../App/Statics/Nevis-Logo-White-Bg.jpg" alt="Nevis Logo" width="250">
 </p>
 
 ## ✨ Description | Purpose Of The Project
