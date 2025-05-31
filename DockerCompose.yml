@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  nevis-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./App/Assets/Models:/app/App/Assets/Models
+      - ./App/Statics:/app/App/Statics
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
