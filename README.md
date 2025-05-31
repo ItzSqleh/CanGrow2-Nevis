@@ -53,9 +53,9 @@ CanGrow2-Final/
 │   ├── Model.py                # Core Model Logic And Predictions
 │   ├── Assets/                 # Static Assets And Models
 │   │   └── Models/
-│   │       ├── Model.pkl       # Trained Job Classifier Model
-│   │       ├── Vectorizer.pkl  # TF-IDF Vectorizer
-│   │       └── Metadata.json   # Model Metadata
+│   │       ├── JobClassifier.pkl  # Trained Job Classifier Model (Includes Model and Vectorizer)
+│   │       ├── ProcessedResumesWithSkills.csv # Output File
+│   │       └── Skills.json # Output File
 │   └── Statics/                # Multimedia And Branding Files
 │       ├── Nevis-Introduction.mp4
 │       ├── Nevis-IntroVideo.mp4
@@ -154,12 +154,12 @@ CanGrow2-Final/
   sudo apt update
   sudo apt install tesseract-ocr
   ```
-  Add The Installation Path (E.g., C:\Program Files\Tesseract-Ocr\Tesseract.Exe) To The Environment Variable Path Or Configure It In The Code:
-  
-  - **Windows**:
-    ```bash
-    setx PATH "%PATH%;C:\Program Files\Tesseract-OCR"
-    ```
+Add The Installation Path (E.g., C:\Program Files\Tesseract-Ocr\Tesseract.Exe) To The Environment Variable Path Or Configure It In The Code:
+
+- **Windows**:
+  ```bash
+  setx PATH "%PATH%;C:\Program Files\Tesseract-OCR"
+  ```
 
 ### Local Setup (Without Docker) 🖥️
 1. Clone The Repository:  
@@ -246,6 +246,8 @@ python3 -c "import nltk; nltk.download(['punkt', 'stopwords', 'wordnet', 'punkt_
 - **Model Details**: `Nevis-ModelNotes.pdf`  
 - **Project Checklist**: `Project-Checklist.pdf`  
 - **Technical Flowchart**: `TechnicalFlowchart.pdf`
+
+**⚠️ Important Notice:** All Output Files ((`ProcessedResumesWithSkills.csv`, `Skills.json`)) Are Saved In The (`App\Assets\Models\`).
 
 ---
 
