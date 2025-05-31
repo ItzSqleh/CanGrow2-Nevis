@@ -154,12 +154,12 @@ CanGrow2-Final/
   sudo apt update
   sudo apt install tesseract-ocr
   ```
-Add The Installation Path (E.g., C:\Program Files\Tesseract-Ocr\Tesseract.Exe) To The Environment Variable Path Or Configure It In The Code:
-
-- **Windows**:
-  ```bash
-  setx PATH "%PATH%;C:\Program Files\Tesseract-OCR"
-  ```
+  Add The Installation Path (E.g., C:\Program Files\Tesseract-Ocr\Tesseract.Exe) To The Environment Variable Path Or Configure It In The Code:
+  
+  - **Windows**:
+    ```bash
+    setx PATH "%PATH%;C:\Program Files\Tesseract-OCR"
+    ```
 
 ### Local Setup (Without Docker) 🖥️
 1. Clone The Repository:  
