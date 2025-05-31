@@ -247,7 +247,7 @@ python3 -c "import nltk; nltk.download(['punkt', 'stopwords', 'wordnet', 'punkt_
 - **Project Checklist**: `Project-Checklist.pdf`  
 - **Technical Flowchart**: `TechnicalFlowchart.pdf`
 
-**⚠️ Important Notice:** All Output Files (`ProcessedResumesWithSkills.csv`, `Skills.json`) Are Saved In The (`App\Assets\Models\`).
+**⚠️ Important Notice:** All Output Files (`ProcessedResumesWithSkills.csv`, `Skills.json`) Are Saved In The (`CanGrow2-Nevis\App\Assets\Models\`).
 
 ---
 
