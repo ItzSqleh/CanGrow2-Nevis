@@ -1,89 +1,212 @@
-# 📌 Nevis – CanGrow 2 – Smart Career Path Navigator & Self-Growth Assistant
+# 📌 CanGrow2 – Nevis – Smart Career Path Navigator & Self-Growth Assistant 🌱
 
-<video width="600" controls>  
-  <source src="Assets/Nevis-IntroVideo.mp4" type="video/mp4">  
-  Your Browser Does Not Support The Video Tag.  
-</video>  
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Docker-20.10+-blue?logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/Streamlit-1.39.0-orange?logo=streamlit" alt="Streamlit">
+</p>
 
-## ✨ About The Project  
-Nevis Is An AI-Powered Career Navigation Platform That Helps Professionals And Job Seekers:  
-- 📄 Upload Resumes In Multiple Formats (TXT/PDF/Images)  
-- 🔍 Receive AI-Generated Career Insights  
-- 💡 Get Personalized Guidance Through Chatbot Interactions  
-- 🎯 Identify Skill Gaps And Development Opportunities  
+<p align="center">
+  <img src="../App/Statics/Nevis-Logo-White-Bg.jpg" alt="Nevis Dev Logo" width="250">
+</p>
 
-Built With Streamlit And Integrated With Trained ML Models From [CanGrow2-Raw-Nevis](https://github.com/example), This Tool Focuses On Accessibility And Actionable Career Planning.
+<p align="center">
+  <video width="600" controls>  
+    <source src="App/Statics/Nevis-IntroVideo.mp4" type="video/mp4">  
+    Your Browser Does Not Support The Video Tag !  
+  </video>
+</p>
 
-## 🧠 Key Features  
-| Feature | Description |
-|---------|-------------|
-| **Multi-Format Resume Parser** | Extracts Text From TXT/PDF/Image Files |
-| **AI Job Matching** | Suggests Optimal Roles Using Trained Classifier |
-| **Skill Gap Analyzer** | Identifies Missing Competencies For Target Roles |
-| **Interactive Roadmaps** | Generates Step-By-Step Career Progression Plans |
-| **Visual Analytics** | Presents Data Through Interactive Charts |
-| **Dockerized Deployment** | One-Click Containerization Support |
+## ✨ About The Project
 
-## 🏗️ Repository Structure + Will Be Changed
-CanGrow2-Final-Nevis/
-├── Assets/ # Media Files
-│ ├── Nevis-Logo-White-Bg.jpg
-│ └── Nevis-IntroVideo.mp4
-├── Src/
-│ ├── App/ # Streamlit Application
-│ │ ├── StreamlitApp.py # Main UI Script
-│ ├── Data/ # Processed Datasets
-│ │ ├── Role-Resume-Dataset.csv
-│ │ └── Processed/ # Analyzed Outputs
-│ └── Models/ # Trained ML Models
-├── Dockerfile # Container Config
-├── docker-compose.yml # Orchestration
-└── requirements.txt # Python Dependencies
+🌟 **Nevis – Smart Career Path Navigator & Self-Growth Assistant** Is An Innovative AI-Powered Platform Designed To Empower Professionals And Job Seekers With Actionable Career Insights. Built As Part Of The CanGrow2 Initiative, Nevis Enables Users To :  
 
+- 📄 Upload Resumes In Diverse Formats (`.txt`, `.pdf`, `.docx`, `.jpg`, `.png`).  
+- 🔍 Receive AI-Generated Job Recommendations And Skill Gap Analysis.  
+- 💡 Interact With A Chatbot For Personalized Career Guidance.  
+- 🎯 Explore Tailored Development Roadmaps For Career Growth.  
 
-## 🛠️ Tech Stack  
-**Core Components**  
-- **Backend**: Python 3.8+  
-- **ML Framework**: Scikit-learn 1.5.2  
-- **NLP Toolkit**: NLTK 3.9.1  
-- **Document Processing**: PyMuPDF, Pytesseract  
-- **Frontend**: Streamlit 1.39.0  
-- **Containerization**: Docker  
+Leveraging Advanced Machine Learning And NLP Techniques From The [CanGrow2-Raw-Nevis](https://github.com/ItzSqleh/CanGrow2-Raw-Nevis) Repository, Nevis Is Deployed Via Docker For Seamless Local Use, Accessible At [http://localhost:8501](http://localhost:8501). This Repository (`CanGrow2-Final`) Hosts The Final Application, Integrating Trained Models And A User-Friendly Streamlit Interface.
 
-## ⚙️ Core Workflows  
-1. **Resume Processing Pipeline**  
-   - File Upload → Text Extraction → NLP Cleaning → Feature Generation  
-2. **Job Recommendation Engine**  
-   - TF-IDF Vectorization → Model Inference → Top-K Role Selection  
-3. **Skill Gap Analysis**  
-   - Skill Extraction → Competency Matching → Gap Visualization  
-4. **Interactive Chatbot**  
-   - Query Understanding → Knowledge Retrieval → Response Generation  
+---
 
-## 🚀 Deployment  
-### Local Setup  
+## 🧠 Key Features
+
+| Feature                  | Description                                      |
+|--------------------------|--------------------------------------------------|
+| **Multi-Format Parsing** | Extracts Text From `.txt`, `.pdf`, Images Using OCR |
+| **AI Job Matching**      | Suggests Top Job Roles With Confidence Scores    |
+| **Skill Gap Analyzer**   | Identifies Missing Skills For Target Careers     |
+| **Career Roadmaps**      | Provides Step-By-Step Progression Plans          |
+| **Interactive Charts**   | Visualizes Job Probabilities And Skill Gaps      |
+| **Chatbot Assistance**   | Offers Real-Time Answers To Career Queries       |
+| **Dockerized Setup**     | One-Click Deployment With Persistent Model Access|
+
+---
+
+## 🏗️ Repository Structure
+
 ```bash
-git clone https://github.com/ItzSqleh/CanGrow2-Final-Nevis.git
-cd CanGrow2-Final-Nevis
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run Src/App/StreamlitApp.py
+CanGrow2-Final/
+├── App/
+│   ├── StreamlitApp.py         # Main Streamlit UI Script
+│   ├── Model.py                # Core Model Logic And Predictions
+│   ├── Assets/                 # Static Assets And Models
+│   │   └── Models/
+│   │       ├── Model.pkl       # Trained Job Classifier Model
+│   │       ├── Vectorizer.pkl  # TF-IDF Vectorizer
+│   │       └── Metadata.json   # Model Metadata
+│   └── Statics/                # Multimedia And Branding Files
+│       ├── Nevis-Introduction.mp4
+│       ├── Nevis-IntroVideo.mp4
+│       ├── Nevis-Logo.png
+│       ├── Nevis-LogoMotion.gif
+│       ├── Nevis-LogoMotion.mp4
+│       └── Nevis-Logo-White-Bg.jpg
+├── Docs/                       # Documentation Files
+│   ├── HowToRun.md             # Deployment Guide
+│   ├── Tutorial.md             # User Tutorial
+│   └── Documents/
+│       ├── Nevis-ArchitectureNotes.pdf
+│       ├── Nevis-ModelNotes.pdf
+│       ├── Project-Checklist.pdf
+│       └── TechnicalFlowchart.pdf
+├── DockerCompose.yml           # Docker Compose Configuration
+├── Dockerfile                  # Docker Image Build Instructions
+├── README.md                   # Project Overview
+├── Requirements.txt            # Python Dependencies
 ```
 
-### Docker Deployment
-```bash
-docker-compose up --build
-# Access at http://localhost:8501
-```
+---
+
+## 🛠️ Tech Stack
+
+| Category           | Tool/Library      | Version  | Purpose                        |
+|--------------------|-------------------|----------|-------------------------------|
+| Base Image         | Python            | 3.10-slim| Container Base Image          |
+| Machine Learning   | Scikit-learn      | 1.5.2    | Job Classification Models     |
+| Text Processing    | NLTK              | 3.9.1    | NLP Feature Extraction        |
+| Advanced NLP       | Transformers      | 4.45.1   | MBTI Detection And Summarization |
+| Data Manipulation  | Pandas            | 2.2.3    | Data Handling                 |
+| Numerical Ops      | NumPy             | 2.1.1    | Matrix Calculations           |
+| Model Serialization| Joblib            | 1.4.2    | Model Persistence             |
+| Visualization      | Matplotlib        | 3.9.2    | Plotting                      |
+| Enhanced Viz       | Seaborn           | 0.13.2   | Statistical Visuals           |
+| Interactive Charts | Plotly            | 5.23.0   | Dynamic Charts                |
+| PDF Processing     | PyMuPDF           | 1.24.10  | Resume Extraction             |
+| OCR                | Pytesseract       | 0.3.13   | Image Text Recognition        |
+| Image Processing   | Pillow            | 10.4.0   | File Processing               |
+| Progress Tracking  | Tqdm              | 4.66.5   | Progress Bars                 |
+| Web Framework      | Streamlit         | 1.39.0   | Interactive UI                |
+| HTTP Requests      | Requests          | 2.32.3   | API Calls                     |
+| DOCX Processing    | Python-Docx       | 1.1.2    | DOCX Resume Parsing           |
+| Fuzzy Matching     | FuzzyWuzzy        | 0.18.0   | MBTI Inference                |
+| Containerization   | Docker Compose    | 3.8      | Orchestration                 |
+
+---
+
+## ⚙️ Core Workflows
+
+### 1. Resume Processing Pipeline 🌱
+
+**Input**: Resume Files (`.txt`, `.pdf`, `.docx`, Images).  
+**Steps**:  
+- 📥 File Upload And Text Extraction (OCR For Images).  
+- 🧹 NLP Cleaning (Tokenization, Lemmatization, Stopword Removal).  
+- 📊 Feature Generation (Skills, MBTI, Text Vectors).  
+**Output**: Processed Resume Data For Analysis.
+
+### 2. Job Recommendation Engine 🔥
+
+**Process**:  
+- 📈 TF-IDF Vectorization Of Resume Text.  
+- 🤖 Model Inference With Logistic Regression.  
+- ⭐ Top-3 Job Suggestions With Probabilities.  
+**Output**: Ranked Job List With Career Paths.
+
+### 3. Skill Gap Analysis 🛠️
+
+**Process**:  
+- 🔍 Extract Current Skills From Resume.  
+- 📋 Compare With Job Requirements.  
+- 📝 Generate Missing Skills Report.  
+**Output**: Skill Gap Matrix And Development Suggestions.
+
+### 4. Interactive Chatbot 💬
+
+**Process**:  
+- 🎙️ User Query Input (e.g., "What Jobs For Me?").  
+- 🧠 AI Response Generation Via Grok API.  
+- 📤 Real-Time Feedback On Jobs, Skills, And MBTI.  
+**Output**: Personalized Career Advice.
+
+---
+
+## 🚀 Deployment Instructions
+
+### Prerequisites ✅
+- Python 3.10+ (For Local Testing).  
+- Docker And Docker Compose Installed.  
+- Tesseract-OCR For OCR Support:  
+  - **Windows**: Install From [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).  
+  - **Linux**: Run `sudo apt-get install tesseract-ocr`.
+
+### Local Setup (Without Docker) 🖥️
+1. Clone The Repository:  
+   ```bash
+   git clone https://github.com/ItzSqleh/CanGrow2-Final.git
+
+   cd CanGrow2-Final
+   ```
+2. Create A Virtual Environment:  
+   ```bash
+   python -m venv venv
+
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
+3. Install Dependencies:  
+   ```bash
+   pip install -r Requirements.txt
+   ```
+4. Run The Streamlit App:  
+   ```bash
+   streamlit run App/StreamlitApp.py
+   ```
+5. Access At: [http://localhost:8501](http://localhost:8501).
+
+### Docker Deployment (Recommended) 🐳
+1. Clone The Repository:  
+   ```bash
+   git clone https://github.com/ItzSqleh/CanGrow2-Final.git
+
+   cd CanGrow2-Final
+   ```
+2. Build And Run With Docker Compose (Note: File Is `DockerCompose.yml`):  
+   ```bash
+   docker-compose -f DockerCompose.yml up --build
+   ```
+3. Access The UI:  
+   Open [http://localhost:8501](http://localhost:8501) In Your Browser.
+
+---
 
 ## 📊 Expected Outputs
+- **Job Recommendations** 🌟: A Ranked List With Confidence Scores (e.g., "Developer - 85%").  
+- **Skill Reports** 📋: Matrix Of Existing And Missing Skills.  
+- **Career Pathways** 🛤️: Timeline-Based Plans (e.g., Junior → Senior Roles).  
+- **Chat Transcripts** 💬: Personalized Q&A Logs For Career Guidance.
 
-- **Job Recommendations :**: Ranked List With Confidence Scores  
-- **Skill Reports :**: Missing/Existing Skills Matrix
-- **Career Pathways :**: Timeline-Based Progression Plans
-- **Chat Transcripts :**: Personalized Q&A Sessions
+🎥 **Watch The Demo**: [Nevis Intro Video](App/Statics/Nevis-IntroVideo.mp4)
 
-> 🎥 **Watch The Demo Video**: [Nevis Intro & Demo](Assets/Nevis-IntroVideo.mp4)  
+---
 
-> ⚠️ Note: All Output Files Are Stored In Src/Data/Processed/ Directory .
+## 📚 Additional Resources
+- **Architecture Notes**: `Nevis-ArchitectureNotes.pdf`  
+- **Model Details**: `Nevis-ModelNotes.pdf`  
+- **Project Checklist**: `Project-Checklist.pdf`  
+- **Technical Flowchart**: `TechnicalFlowchart.pdf`
+
+---
+
+## ⏰ Last Updated
+**Date**: May 31, 2025 🕘
