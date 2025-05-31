@@ -146,10 +146,20 @@ CanGrow2-Final/
 
 ### Prerequisites ✅
 - Python 3.10+ (For Local Testing).  
-- Docker And Docker Compose Installed.  
+- Docker And Docker Compose Installed.
 - Tesseract-OCR For OCR Support:  
-  - **Windows**: Install From [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).  
-  - **Linux**: Run `sudo apt-get install tesseract-ocr`.
+  - **Windows**: Install From [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).
+  - **Ubuntu**:
+  ```bash
+  sudo apt update
+  sudo apt install tesseract-ocr
+  ```
+Add The Installation Path (E.g., C:\Program Files\Tesseract-Ocr\Tesseract.Exe) To The Environment Variable Path Or Configure It In The Code:
+
+- **Windows**:
+  ```bash
+  setx PATH "%PATH%;C:\Program Files\Tesseract-OCR"
+  ```
 
 ### Local Setup (Without Docker) 🖥️
 1. Clone The Repository:  
@@ -160,19 +170,50 @@ CanGrow2-Final/
    ```
 2. Create A Virtual Environment:  
    ```bash
-   python -m venv venv
+   python -m venv NevisEnv
 
-   source venv/bin/activate  # Windows: venv\Scripts\activate
+   source NevisEnv/bin/activate  # Windows: NevisEnv\Scripts\activate
    ```
 3. Install Dependencies:  
    ```bash
    pip install -r Requirements.txt
    ```
-4. Run The Streamlit App:  
+   Or Use Pip :
+   
+   ```bash
+   pip install \
+    Pandas==2.2.3 \
+    Numpy==2.1.1 \
+    Scikit-Learn==1.5.2 \
+    Joblib==1.4.2 \
+    Nltk==3.9.1 \
+    Wordcloud==1.9.3 \
+    Matplotlib==3.9.2 \
+    Seaborn==0.13.2 \
+    Plotly==5.23.0 \
+    Pymupdf==1.24.10 \
+    Pytesseract==0.3.13 \
+    Pillow==10.4.0 \
+    Tqdm==4.66.5 \
+    Transformers==4.45.1 \
+    Streamlit==1.39.0 \
+    Requests==2.32.3 \
+    Python-Docx==1.1.2 \
+    Fuzzywuzzy==0.18.0 \
+    Python-Levenshtein
+   ```
+4. Download Nltk Data
+Required Nltk Data Must Be Downloaded. This Can Be Done Automatically In The Code, But For Assurance, You Can Execute The Following Command:
+
+```bash
+python3 -c "import nltk; nltk.download(['punkt', 'stopwords', 'wordnet', 'punkt_tab'], quiet=True)"
+```
+
+5. Run The Streamlit App:  
    ```bash
    streamlit run App/StreamlitApp.py
    ```
-5. Access At: [http://localhost:8501](http://localhost:8501).
+6. Access At: [http://localhost:8501](http://localhost:8501).
 
 ### Docker Deployment (Recommended) 🐳
 1. Clone The Repository:  
